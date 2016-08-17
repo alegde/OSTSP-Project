@@ -57,7 +57,7 @@ def get_distances(start = [], end = [], travel_type  = 'driving', mode = 'Google
     distances = {}
 
     if mode == 'GoogleMaps':
-        Key = 'AIzaSyDHL5tcjxM6Q7Iyy3nNRoZV2IMLYQrm7Uk'
+        Key = 'Your Key'
         client = googlemaps.Client(self.Key)
         for start_slice in [start[i-1:i+9] for i in itertools.islice(start,0,None,10)]:
             for end_slice in [end[i-1:i+9] for i in itertools.islice(end,0,None,10)]:
@@ -95,10 +95,10 @@ def Add_nodes(city_name = 'San_Francisco', buss_type = 'Restaurants' , number = 
 
 
     auth = Oauth1Authenticator(
-        consumer_key="zjqZkY01Asrg3kl0GZZj6g",
-        consumer_secret="xoxaAfxSQoSzK-Vh64Hb2cNSoak",
-        token="vNjjZ8y5FgjCEmFjerH7Uy9jG9lckHMs",
-        token_secret="uCiFq4mzxRGMIhb-d7u3qFRJaUU"
+        consumer_key="",
+        consumer_secret="",
+        token="",
+        token_secret=""
     )
         
     client = Client(auth)
